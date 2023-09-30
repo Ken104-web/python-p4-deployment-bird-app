@@ -16,7 +16,8 @@ app = Flask(
     template_folder='../client/build'
 )
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://myname:sGBckd0N5KJk8QmvDhnMZj21E7ghM4ao@dpg-ckc1h6ect0pc7390mn40-a.oregon-postgres.render.com/bird_app_db_bznm"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
 
